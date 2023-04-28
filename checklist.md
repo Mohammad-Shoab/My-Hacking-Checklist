@@ -1,4 +1,4 @@
-# Information Gathering
+## Information Gathering
 a. Subdomain enumeration
 I. Sublis3tr
 b. Checking live hosts
