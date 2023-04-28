@@ -63,70 +63,26 @@ friend request, register, contact form, Any form, 2fa submission
 ### c. Application-level DOS via load-scripts.php
 
 
-## 9. XSS
-### a. Basic Payload
-- Use Burp spider to find requests having parameters.
-- Find vulnerable parameter and try payload there.
-### b. Manual
-- If keyboard input become string response try to give input through mouse. E.g., onmouseover=alert(1);
-- When we closing the input and it gets filtered out then build a payload which would not closed initially and it supposed to execute initially. E.g., <svg/onload=alert (1); here we have use; to break so no need of closing here.
-- If input reflects as a plaintext, then use svg vector and if they filter some part like open parathesis or anything then try html entity encoder. E.g., we are giving <svg><script>alert(1)</script> but it reflects as <svg><script>alert1)</script> then try to encode “(“ using html entity encoder (can use burp suite html encoder to encode it) after encoding “(“ it will become “&#x28;” and final payload will be <svg><script>alert &#x28; 1)</script>
-Summary: when something will filter you can convert that into html code so browser directly execute that
-- If input is reflecting in html comment, then close comment, then inject payload. E.g., --!><script>alert(1)</script>
-### c. Automation
-- Use Burp Suite’s intruder and XSS payload file.
-### d. XSS through host header injection
-### e. XSS through file uploading.
-### f. XSS through RFI (Whenever websites take URL as an input filed you can try to inject
-payload through a file)
-building
-### g. Try to change self XSS to reflected.
+## 16. SSRF
+### a. You have to find any parameter that may have some kind of external interaction or they can interact to external domain
+- Read file from server (file:///LFI_payloads)
+- Scan the Internal Network
+- SSRF with RFI
+  
+  
+## 17. Source Code Disclosure
+### a. Google dork
+- Site:example.com index.of.backup 
+### b. Use intruder with critical file payload
+  
+  
+## 18. CSRF
+  
+  
+## 19. Burp Suite (Actively and Passively scan the host) 
 
   
-## 10. URL Redirection
-a. Using common parameter list (continue, window, redirect, path, url, to, out, view, show,
-dir, navigation, domain etc.)
-b. URL Redirection on Path Fragments. Example:
-• Any.com/payloads • Any.com/bing.com • any.com//bing.com
-c. Use burp’s intruder and open redirection payload list to automate open redirection
-11. Parameter Tampering 12. Html Injection
-13. File Inclusion
-a. LFI
-Possible Parameter ['file', 'document', 'folder', 'root' 'path' pg', 'style' pdf', 'template', p hp_path','doc']
-Automation: LFISuite [https://github.com/D35m0nd142/LFISuite] b. RFI
-Possible Parameter ['dest', 'redirect', 'uri', 'path', 'continue', 'url', 'window', 'next', data', 'reference', 'site', 'html', 'val', 'validate', domain', 'callback', return', page', 'feed' 'host', 'port', 'to' out', 'view', dir', 'show' 'navigation', 'open']
-14. SPF record
-a. To check SPF record
-I. Go to - http://www.kitterman.com/spf/validate.html
-II. Or go to - https://mxtoolbox.com
-b. Exploitation
-Go to - https://anonymousemail.me/
-15. Insecure CORS
-a. Insecure CORS through Response Header
-I. Search in Response: Access-Control-Allow-Origin
-b. Insecure CORS through Request Header
-I. Add header in request: Origin: http://evil.com
-II. Search in Response: Access-Control-Allow-Origin
-c. curl http://any.com -H “Origin: http://hackersera.com” -I
-
-d. Conditions
-• POORLY IMPLEMENTED, BEST CASE FOR ATTACK:
-• Access-Control-Allow-Origin: https://attacker.com
-• Access-Control-Allow-Credentials: true
-• POORLY IMPLEMENTED, EXPLOITABLE:
-• Access-Control-Allow-Origin: null
-• Access-Control-Allow-Credentials: true
-16. SSRF
-a. You have to find any parameter that may have some kind of external interaction or they
-can interact to external domain
-• Read file from server (file:///LFI_payloads)
-• Scan the Internal Network
-• SSRF with RFI
-17. Source Code Disclosure
-a. Google dork
-I. Site:example.com index.of.backup b. Use intruder with critical file payload
-18. CSRF
-19. Burp Suite (Actively and Passively scan the host) 20. Intercom
+## 20. Try Intercom bug
 
 ## Installation
 
