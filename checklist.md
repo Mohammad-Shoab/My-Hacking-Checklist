@@ -1,5 +1,5 @@
 ## 1. Information Gathering
-- a. Subdomain enumeration
+### a. Subdomain enumeration
 I. Sublis3tr
 - b. Checking live hosts
 I. Httpx
