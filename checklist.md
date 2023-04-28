@@ -1,16 +1,19 @@
 ## 1. Information Gathering
 ### a. Subdomain enumeration
-I. Sublis3tr
-- b. Checking live hosts
-I. Httpx
-- c. Checking status code
-I. httpstatus.io d. Recon
-I. Source code view
-II. Check JS files
-III. Way-back URL (web archive)
-IV. Google Dorking
-V. Bug Bounty Helper (https://dorks.faisalahmed.me/#)
-VI. GitHub Dorking
+- Sublis3tr
+- Subfinder
+- SubEnum
+### b. Checking live hosts
+- Httpx
+### c. Checking status code
+- httpstatus.io 
+### d. Recon
+- Source code view
+- Check JS files
+- Way-back URL (web archive)
+- Google Dorking
+- Bug Bounty Helper (https://dorks.faisalahmed.me/#)
+- GitHub Dorking
 
 
 ## 2. Critical File Vulnerability
