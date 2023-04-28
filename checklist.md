@@ -31,10 +31,22 @@ friend request, register, contact form, Any form, 2fa submission
 - Try rate limit bypass
 
 
-## Account Takeover
+## 6. Account Takeover
 - Response Manipulation/Status code Manipulation
 - Brute Force
 
+
+## 7. 2FA BYPASS (https://www.youtube.com/watch?v=X2WfhBYQ2fY)
+- Response Manipulation/Status code Manipulation
+- Brute Force
+- Token doesn't expire after usage
+- Request 2 tokens from account A and B. Use the A's token in B's account
+- Try to go directly to the dashboard URL without solving the 2FA. If not, success try adding the referral header to the 2FA page URL while going to dashboard
+- Search the 2FA code in response
+- Search the 2FA code in JS files
+- CSRF/Clickjacking to disable 2FA
+- Request Manipulation
+- Enabling 2FA doesn't expire previous sessions
 
 
 ## Installation
