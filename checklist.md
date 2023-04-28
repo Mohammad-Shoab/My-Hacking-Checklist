@@ -36,7 +36,8 @@ friend request, register, contact form, Any form, 2fa submission
 - Brute Force
 
 
-## 7. Two Factor Authentication(2FA) BYPASS (https://www.youtube.com/watch?v=X2WfhBYQ2fY)
+## 7. Two Factor Authentication(2FA) BYPASS 
+>Reference(https://www.youtube.com/watch?v=X2WfhBYQ2fY)
 - Response Manipulation/Status code Manipulation
 - Brute Force
 - Token doesn't expire after usage
