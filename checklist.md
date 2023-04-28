@@ -21,6 +21,22 @@
 - If got 403, then use 403 bypasser (https://github.com/iamj0ker/bypass-403)
 
 
+## 4. Automation
+- Nuclei
+
+
+## 5. Rate limit testing
+- Profile details change, login, forgot password, comment, share, report post, tag, sending
+friend request, register, contact form, Any form, 2fa submission
+- Try rate limit bypass
+
+
+## Account Takeover
+- Response Manipulation/Status code Manipulation
+- Brute Force
+
+
+
 ## Installation
 
 >For Linux:
