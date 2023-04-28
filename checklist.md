@@ -1,13 +1,12 @@
-## Information Gathering
-a. Subdomain enumeration
+## 1. Information Gathering
+- a. Subdomain enumeration
 I. Sublis3tr
-b. Checking live hosts
+- b. Checking live hosts
 I. Httpx
-c. Checking status code
+- c. Checking status code
 I. httpstatus.io d. Recon
 I. Source code view
 II. Check JS files
-Checklist
 III. Way-back URL (web archive)
 IV. Google Dorking
 V. Bug Bounty Helper (https://dorks.faisalahmed.me/#)
