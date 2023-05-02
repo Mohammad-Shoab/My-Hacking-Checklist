@@ -23,6 +23,7 @@
 
 ## 3. Host Header Injection
 ### Chain Bugs:
+
 a. HHI ----> Password Reset Poisoning
 b. HHI ----> Password Reset Poisoning via dangling markup (Host: target.com:'<a href="//bing.com/?)
 c. HHI ----> Web cache poisoning
@@ -33,6 +34,7 @@ c. HHI ----> Web cache poisoning
     ```
 
 ### Payloads:
+    
 I. Change the host header
     ```
     Host: vulnerable-website.com ----> evil-website.com
