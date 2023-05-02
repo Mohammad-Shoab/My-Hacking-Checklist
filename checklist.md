@@ -132,9 +132,7 @@ friend request, register, contact form, Any form, 2fa submission
     
 ### d. XSS through host header injection
 ### e. XSS through file uploading.
-### f. XSS through RFI (Whenever websites take URL as an input filed you can try to inject
-payload through a file)
-building
+### f. XSS through RFI (Whenever websites take URL as an input filed you can try to inject payload through a file)
 ### g. Try to change self XSS to reflected.
 
 
