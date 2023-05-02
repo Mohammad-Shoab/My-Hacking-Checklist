@@ -122,12 +122,8 @@ friend request, register, contact form, Any form, 2fa submission
 ### b. Manual
     
     I. If keyboard input become string response try to give input through mouse. E.g., onmouseover=alert(1);
-    
-    II. When we closing the input and it gets filtered out then build a payload which would not closed initially and it supposed to execute initially. E.g., <svg/onload=alert (1); here we have use; to break so no need of closing here.
-    
-    III. If input reflects as a plaintext, then use svg vector and if they filter some part
-like open parathesis or anything then try html entity encoder. E.g., we are giving <svg><script>alert(1)</script> but it reflects as <svg><script>alert1)</script> then try to encode “(“ using html entity encoder (can use burp suite html encoder to encode it) after encoding “(“ it will become “&#x28;” and final payload will be < svg><script>alert &#x28; 1)</script>
-Summary: when something will filter you can convert that into html code so browser directly execute that
+    II. When we closing the input and it gets filtered out then build a payload which would not closed initially and it supposed to execute initially. E.g., <svg/onload=alert (1); here we have use; to break so no need of closing here.    
+    III. If input reflects as a plaintext, then use svg vector and if they filter some part like open parathesis or anything then try html entity encoder. E.g., we are giving <svg><script>alert(1)</script> but it reflects as <svg><script>alert1)</script> then try to encode “(“ using html entity encoder (can use burp suite html encoder to encode it) after encoding “(“ it will become “&#x28;” and final payload will be < svg><script>alert &#x28; 1)</script> Summary: when something will filter you can convert that into html code so browser directly execute that
     IV. If input is reflecting in html comment, then close comment, then inject payload. E.g., --!><script>alert(1)</script>
     
 ### c. Automation
