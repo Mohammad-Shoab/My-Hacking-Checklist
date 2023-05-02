@@ -21,6 +21,18 @@
 - If got 403, then use 403 bypasser (https://github.com/iamj0ker/bypass-403)
 
 
+## 3. Host Header Injection
+### Chain Bugs:
+- a. HHI ----> Password Reset Poisoning
+- b. HHI ----> Password Reset Poisoning via dangling markup (Host: target.com:'<a
+href="//bing.com/?)
+- c. HHI ----> Web cache poisoning
+-- I. Web Cache Poisoning ----> XSS
+-- II. Web Cache Poisoning ----> Open Redirection
+-- III. Web Cache Poisoning ----> Open Redirection ----> Dos
+
+
+
 ## 4. Automation
 - Nuclei
 
