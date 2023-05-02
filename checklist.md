@@ -102,11 +102,9 @@ friend request, register, contact form, Any form, 2fa submission
 - CMSMap
 - CMSScan
 ### b. XMLRPC
-- SSRF - pingback.ping
-    
-    Port Scanning
-    Origin Ip Found
-    
+- SSRF - pingback.ping  
+    - Port Scanning
+    - Origin Ip Found
 - Bruteforce - wp.getUsersBlogs
 ### c. Application-level DOS via load-scripts.php
 
