@@ -103,8 +103,8 @@ friend request, register, contact form, Any form, 2fa submission
 - CMSScan
 ### b. XMLRPC
 - SSRF - pingback.ping  
-    - Port Scanning
-    - Origin Ip Found
+1. Port Scanning
+2. Origin Ip Found
 - Bruteforce - wp.getUsersBlogs
 ### c. Application-level DOS via load-scripts.php
 
