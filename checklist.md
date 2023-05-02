@@ -113,29 +113,27 @@ friend request, register, contact form, Any form, 2fa submission
 ### c. Application-level DOS via load-scripts.php
 
 
-## 9. XSS
-    
-- a. Basic Payload
+## 9. XSS  
+#### a. Basic Payload
     
     I. Use Burp spider to find requests having parameters.
     II. Find vulnerable parameter and try payload there.
     
-- b. Manual
+#### b. Manual
     
     I. If keyboard input become string response try to give input through mouse. E.g., onmouseover=alert(1);
     II. When we closing the input and it gets filtered out then build a payload which would not closed initially and it supposed to execute initially. E.g., <svg/onload=alert (1); here we have use; to break so no need of closing here.    
     III. If input reflects as a plaintext, then use svg vector and if they filter some part like open parathesis or anything then try html entity encoder. E.g., we are giving <svg><script>alert(1)</script> but it reflects as <svg><script>alert1)</script> then try to encode “(“ using html entity encoder (can use burp suite html encoder to encode it) after encoding “(“ it will become “&#x28;” and final payload will be < svg><script>alert &#x28; 1)</script> Summary: when something will filter you can convert that into html code so browser directly execute that
     IV. If input is reflecting in html comment, then close comment, then inject payload. E.g., --!><script>alert(1)</script>
     
-- c. Automation
+#### c. Automation
     
     I. Use Burp Suite’s intruder and XSS payload file.
     
-- d. XSS through host header injection
-    
-- e. XSS through file uploading.
-- f. XSS through RFI (Whenever websites take URL as an input filed you can try to inject payload through a file)
-- g. Try to change self XSS to reflected.
+#### d. XSS through host header injection   
+#### e. XSS through file uploading.
+#### f. XSS through RFI (Whenever websites take URL as an input filed you can try to inject payload through a file)
+#### g. Try to change self XSS to reflected.
 
 
 ## 16. SSRF
