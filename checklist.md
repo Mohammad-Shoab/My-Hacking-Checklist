@@ -162,8 +162,30 @@ friend request, register, contact form, Any form, 2fa submission
     • Any.com/bing.com
     • any.com//bing.com
     
-####c. Use burp’s intruder and open redirection payload list to automate open redirection
+#### c. Use burp’s intruder and open redirection payload list to automate open redirection
 
+    
+    
+    
+## 11. Parameter Tampering 
+    
+
+    
+    
+## 12. Html Injection
+    
+    
+    
+
+## 13. File Inclusion
+#### a. LFI
+    
+    Possible Parameter ['file', 'document', 'folder', 'root' 'path' pg', 'style' pdf', 'template', p hp_path','doc']
+    Automation: LFISuite [https://github.com/D35m0nd142/LFISuite] 
+    
+#### b. RFI 
+    
+    Possible Parameter ['dest', 'redirect', 'uri', 'path', 'continue', 'url', 'window', 'next', data', 'reference', 'site', 'html', 'val', 'validate', domain', 'callback', return', page', 'feed' 'host', 'port', 'to' out', 'view', dir', 'show' 'navigation', 'open']
     
     
     
