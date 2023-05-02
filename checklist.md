@@ -151,7 +151,21 @@ friend request, register, contact form, Any form, 2fa submission
 #### f. XSS through RFI (Whenever websites take URL as an input filed you can try to inject payload through a file)
 #### g. Try to change self XSS to reflected.
 
+    
 
+    
+## 10. URL Redirection
+#### a. Using common parameter list (continue, window, redirect, path, url, to, out, view, show, dir, navigation, domain etc.)
+#### b. URL Redirection on Path Fragments. Example:
+    
+    • Any.com/payloads
+    • Any.com/bing.com
+    • any.com//bing.com
+    
+####c. Use burp’s intruder and open redirection payload list to automate open redirection
+
+    
+    
     
     
 ## 16. SSRF
