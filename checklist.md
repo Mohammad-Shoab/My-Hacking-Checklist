@@ -222,50 +222,33 @@ friend request, register, contact form, Any form, 2fa submission
     • POORLY IMPLEMENTED, EXPLOITABLE:
         • Access-Control-Allow-Origin: null
         • Access-Control-Allow-Credentials: true
-
     
     
     
     
 ## 16. SSRF
-### a. You have to find any parameter that may have some kind of external interaction or they can interact to external domain
+#### a. You have to find any parameter that may have some kind of external interaction or they can interact to external domain
 - Read file from server (file:///LFI_payloads)
 - Scan the Internal Network
 - SSRF with RFI
   
-  
+
+    
+    
 ## 17. Source Code Disclosure
-### a. Google dork
+#### a. Google dork
 - Site:example.com index.of.backup 
-### b. Use intruder with critical file payload
+#### b. Use intruder with critical file payload
   
   
 ## 18. CSRF
-  
+
+    
+    
   
 ## 19. Burp Suite (Actively and Passively scan the host) 
 
+    
+    
   
 ## 20. Try Intercom bug
-
-## Installation
-
->For Linux:
-```bash
-apt update
-apt install git
-git clone https://github.com/Mohammad-Shoab/Port-Scanner.git
-```
->For windows:
-we need to download the zip file and extract it.
-
-## Usage
-
-- For Linux: Type ```python3 port_scanner.py (ip)``` to run the tool.
-- For windows: Open cmd at file location & Type ```python3 port_scanner.py (ip)``` to run the tool.
-
-(we have to put ip without bracket like python3 port_scanner.py 127.0.x.x)
-
-## Note
-
-In the port scanner.py file, I had configured the port from 50 to 85 by default, but you may alter it to suit your needs.
