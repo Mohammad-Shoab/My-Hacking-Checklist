@@ -161,7 +161,6 @@ friend request, register, contact form, Any form, 2fa submission
     • Any.com/payloads
     • Any.com/bing.com
     • any.com//bing.com
-    
 #### c. Use burp’s intruder and open redirection payload list to automate open redirection
 
     
