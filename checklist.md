@@ -1,13 +1,13 @@
 ## 1. Information Gathering
-### a. Subdomain enumeration
+#### a. Subdomain enumeration
 - Sublis3tr
 - Subfinder
 - SubEnum
-### b. Checking live hosts
+#### b. Checking live hosts
 - Httpx
-### c. Checking status code
+#### c. Checking status code
 - httpstatus.io 
-### d. Recon
+#### d. Recon
 - Source code view
 - Check JS files
 - Way-back URL (web archive)
@@ -111,11 +111,11 @@ friend request, register, contact form, Any form, 2fa submission
     
     
 ## 8. WordPress
-### a. Automation
+#### a. Automation
 - WPScan
 - CMSMap
 - CMSScan
-### b. XMLRPC
+#### b. XMLRPC
     
 - SSRF - pingback.ping
     
@@ -124,7 +124,7 @@ friend request, register, contact form, Any form, 2fa submission
     
 - Bruteforce - wp.getUsersBlogs
     
-### c. Application-level DOS via load-scripts.php
+#### c. Application-level DOS via load-scripts.php
 
     
     
