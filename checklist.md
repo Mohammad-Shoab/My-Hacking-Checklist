@@ -188,6 +188,44 @@ friend request, register, contact form, Any form, 2fa submission
     
     
     
+
+## 14. SPF record
+#### a. To check SPF record
+    
+    I. Go to - http://www.kitterman.com/spf/validate.html
+    II. Or go to - https://mxtoolbox.com
+    
+#### b. Exploitation
+    
+    Go to - https://anonymousemail.me/
+    
+    
+    
+    
+## 15. Insecure CORS
+#### a. Insecure CORS through Response Header
+    
+    I. Search in Response: Access-Control-Allow-Origin
+    
+#### b. Insecure CORS through Request Header
+    
+    I. Add header in request: Origin: http://evil.com
+    II. Search in Response: Access-Control-Allow-Origin
+    
+#### c. curl http://any.com -H “Origin: http://hackersera.com” -I
+#### d. Conditions
+    
+    • POORLY IMPLEMENTED, BEST CASE FOR ATTACK:
+        • Access-Control-Allow-Origin: https://attacker.com
+        • Access-Control-Allow-Credentials: true
+    
+    • POORLY IMPLEMENTED, EXPLOITABLE:
+        • Access-Control-Allow-Origin: null
+        • Access-Control-Allow-Credentials: true
+
+    
+    
+    
     
 ## 16. SSRF
 ### a. You have to find any parameter that may have some kind of external interaction or they can interact to external domain
