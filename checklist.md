@@ -30,11 +30,9 @@ b. HHI ----> Password Reset Poisoning via dangling markup (Host: target.com:'<a 
     
 c. HHI ----> Web cache poisoning
     
-    ```
     I. Web Cache Poisoning ----> XSS
     II. Web Cache Poisoning ----> Open Redirection
     III. Web Cache Poisoning ----> Open Redirection ----> Dos
-    ```
 
 ### Payloads:
     
