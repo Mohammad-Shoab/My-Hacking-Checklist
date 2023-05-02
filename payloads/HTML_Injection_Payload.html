@@ -1,0 +1,22 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>064 Exploitation of HTML Injection</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><h4></h4><h4>Modify the web page <br>--------------------------------------------------------------------------------------------------------------------------------------------------------------</h4>
+
+<h4>&lt;h1&gt;you have been hacked by OffesiveHunter&lt;/h1&gt;</h4>
+
+<h4>&lt;A HREF="http://bing.com/"&gt;OffensiveHunter&lt;/A&gt;</h4>
+
+<h4>--------------------------------------------------------------------------------------------------------------------------------------------------------------DOM LOad <br>--------------------------------------------------------------------------------------------------------------------------------------------------------------&lt;script src="../js/jquery-1.7.1.js"&gt;&lt;/script&gt;<br>&lt;script&gt;<br>function setMessage(){<br> var t=location.hash.slice(1);<br> $("div[id="+t+"]").text("The DOM is now loaded and can be manipulated.");<br>}<br>$(document).ready(setMessage  );<br>$(window).bind("hashchange",setMessage)<br>&lt;/script&gt;<br>&lt;body&gt;&lt;script src="../js/embed.js"&gt;&lt;/script&gt;<br>&lt;span&gt;&lt;a href="#message" &gt; Show Here&lt;/a&gt;&lt;div id="message"&gt;Showing Message1&lt;/div&gt;&lt;/span&gt;<br>&lt;span&gt;&lt;a href="#message1" &gt; Show Here&lt;/a&gt;&lt;div id="message1"&gt;Showing Message2&lt;/div&gt;<br>&lt;span&gt;&lt;a href="#message2" &gt; Show Here&lt;/a&gt;&lt;div id="message2"&gt;Showing Message3&lt;/div&gt;<br>&lt;/body&gt;<br>--------------------------------------------------------------------------------------------------------------------------------------------------------------</h4></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
