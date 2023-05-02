@@ -16,9 +16,13 @@
 - GitHub Dorking
 
 
+
+
 ## 2. Critical File Vulnerability
 - Dirb
 - If got 403, then use 403 bypasser (https://github.com/iamj0ker/bypass-403)
+
+
 
 
 ## 3. Host Header Injection
@@ -67,20 +71,28 @@ c. HHI ----> Web cache poisoning
     Host: evil-website.com
 
 
+    
+    
 ## 4. Automation
 - Nuclei
 
 
+    
+    
 ## 5. Rate limit testing
 - Profile details change, login, forgot password, comment, share, report post, tag, sending
 friend request, register, contact form, Any form, 2fa submission
 - Try rate limit bypass
 
 
+    
+    
 ## 6. Account Takeover
 - Response Manipulation/Status code Manipulation
 - Brute Force
 
+    
+    
 
 ## 7. Two Factor Authentication(2FA) BYPASS 
 >Reference(https://www.youtube.com/watch?v=X2WfhBYQ2fY)
@@ -96,6 +108,8 @@ friend request, register, contact form, Any form, 2fa submission
 - Enabling 2FA doesn't expire previous sessions
 
 
+    
+    
 ## 8. WordPress
 ### a. Automation
 - WPScan
@@ -112,6 +126,8 @@ friend request, register, contact form, Any form, 2fa submission
     
 ### c. Application-level DOS via load-scripts.php
 
+    
+    
 
 ## 9. XSS  
 #### a. Basic Payload
@@ -136,6 +152,8 @@ friend request, register, contact form, Any form, 2fa submission
 #### g. Try to change self XSS to reflected.
 
 
+    
+    
 ## 16. SSRF
 ### a. You have to find any parameter that may have some kind of external interaction or they can interact to external domain
 - Read file from server (file:///LFI_payloads)
